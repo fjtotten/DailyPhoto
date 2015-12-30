@@ -8,17 +8,38 @@
 
 import UIKit
 import CoreData
+import SwiftyDropbox
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
+    
     var window: UIWindow?
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        application.registerUserNotificationSettings(UIUserNotificationSettings(forTypes: [.Badge, .Alert, .Sound], categories: nil))
+        Dropbox.setupWithAppKey("fw4y7mmlagc8m2y")
+        let defaults = NSUserDefaults.standardUserDefaults();
+        defaults.registerDefaults(["dailyphoto_alert_times":"18:00,20:00,21:00,22:00,22:30,23:00,23:30","dailyphoto_name_settings":"Randy"])
+        defaults.synchronize()
+        
         return true
     }
+    
+    func application(app: UIApplication, openURL url: NSURL, options: [String : AnyObject]) -> Bool {
+        
+        if let authResult = Dropbox.handleRedirectURL(url) {
+            switch authResult {
+            case .Success(let token):
+                print("Success! User is logged into Dropbox with token: \(token)")
+            case .Error(let error, let description):
+                print("Error \(error): \(description)")
+            }
+        }
+        
+        return false
+    }
+
 
     func applicationWillResignActive(application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
