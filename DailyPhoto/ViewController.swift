@@ -20,7 +20,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     @IBOutlet weak var chooseFromCameraRoll: UIButton!
     @IBOutlet weak var imageView: UIImageView!
     var newMedia: Bool?
-    let offlineMode = true
+    let offlineMode = false
     let defaultAlertString = "18:00,20:00,21:00,22:00,22:30,23:00,23:30"
     
     override func viewDidLoad() {
@@ -139,9 +139,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
                 print("*** List folder ***")
                 if let result = response {
                     print("Folder contents:")
-                    for entry in result.entries {
-                        print(entry.name)
-                    }
+                    print("Number of folders = \(result.entries.count)")
                 } else {
                     print(error!)
                 }
@@ -159,7 +157,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         let timeFormatter = NSDateFormatter()
         timeFormatter.dateFormat = "HH-mm-ss"
         let defaults = NSUserDefaults.standardUserDefaults()
-        let userName = defaults.stringForKey("dailyphoto_name_setting")
+        let userName = defaults.stringForKey("dailyphoto_name_setting")!
         let fileName = "\(userName)-\(timeFormatter.stringFromDate(date))"
         
         // Check/Update current date setting to see if we've taken a picture yet today
