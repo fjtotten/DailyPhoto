@@ -1,0 +1,43 @@
+{
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "9D01D5BCCDE322646FEB1945347C3CF4E96976E3" : 0,
+    "D58DF7C3E72198199D1B65DDDAADD2A7790F9A98" : 0,
+    "AA3724F8AD565DB2089C5757B6B76FDB09E52E51" : 0,
+    "FAD0B99C3A0EB9F5EAC9FDFC4A76471FB31CBC6F" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "C2CF382D-17DF-40CD-B2EA-BEF71CCA271C",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "9D01D5BCCDE322646FEB1945347C3CF4E96976E3" : "..\/..\/Downloads\/gtm-oauth2",
+    "D58DF7C3E72198199D1B65DDDAADD2A7790F9A98" : "..\/..\/Downloads\/google-api-objectivec-client",
+    "AA3724F8AD565DB2089C5757B6B76FDB09E52E51" : "..\/..\/Downloads\/json-framework",
+    "FAD0B99C3A0EB9F5EAC9FDFC4A76471FB31CBC6F" : "..\/..\/Downloads\/gtm-session-fetcher"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "GoogleApi",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "DailyPhoto\/GoogleApi.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/google\/gtm-oauth2.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "9D01D5BCCDE322646FEB1945347C3CF4E96976E3"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/stig\/json-framework.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "AA3724F8AD565DB2089C5757B6B76FDB09E52E51"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/google\/google-api-objectivec-client.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "D58DF7C3E72198199D1B65DDDAADD2A7790F9A98"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/google\/gtm-session-fetcher.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "FAD0B99C3A0EB9F5EAC9FDFC4A76471FB31CBC6F"
+    }
+  ]
+}
